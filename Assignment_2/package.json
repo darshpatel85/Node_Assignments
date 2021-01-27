@@ -1,0 +1,13 @@
+{
+  "name": "assignment_2",
+  "version": "0.0.0",
+  "description": "Assignment_2",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.5.1"
+  }
+}
