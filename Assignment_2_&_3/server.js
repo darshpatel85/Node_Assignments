@@ -17,6 +17,9 @@ app.get('/', (req, res) => {
 })
 app.get('/cars', db.getCars);
 app.get('/cars/:id', db.getCar);
+app.post('/cars', db.addCar);
+app.put('/cars/:id', db.updateCar);
+app.delete('/cars/:id', db.deleteCar);
 app.listen(port, () => {
     console.log(`Running on port no. ${port}`);
 })

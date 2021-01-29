@@ -1,0 +1,61 @@
+
+Assignment-3 :
+1. Create API to add car record
+  - Parameter => Car Name, Model Name, Model Name
+ - Validate following things:
+  a. Car Name => Is it already added or not? if exist then response "Car Already exist".
+  b. Make Name => If make name is already exist => Take make Id and store to Car table. 
+   If it is new then get new Id and store in Car table.
+  c. Model Name => If model name is already exist => Take model Id and store to Car table. 
+   If it is new then get new Id and store in Car table.
+
+2. Update car details API
+ - Parameter => Id, Car Name, Model Name, Model Name
+ - Validate following things:
+  a. Car Name => Is it already added or not? if exist then response "Car Already exist".
+  b. Make Name => If make name is already exist => Take make Id and store to Car table. 
+   If it is new then get new Id and store in Car table.
+  c. Model Name => If model name is already exist => Take model Id and store to Car table. 
+   If it is new then get new Id and store in Car table.
+
+3. Delete Car API
+ - Parameter => Id
+
+
+###########################################
+var multer  = require('multer');
+var storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+      cb(null, './uploads/images');
+    },
+    filename: (req, file, cb) => {
+      //console.log(file);
+      var filetype = '';
+      if(file.mimetype === 'image/gif') {
+        filetype = 'gif';
+      }
+      if(file.mimetype === 'image/png') {
+        filetype = 'png';
+      }
+      if(file.mimetype === 'image/jpeg') {
+        filetype = 'jpg';
+      }
+      cb(null, 'image-' + Date.now() + '.' + filetype);
+    }
+});
+var upload = multer({ storage: storage });
+
+sudo npm install express-generator -g
+express image-uploader
+
+Assignment -4 :
+Upload Car picture.
+   - Create new table of "CarImage"
+       Fields : id (serial), CarId(FK-car), ImageName, createdDate
+    Folder : uploads/car_image/
+  Get Id of Car and Get Image name(after uploading image), insert it in "CarImage" table.
+
+All Car details
+{
+ id, model name, make name, image : [{image: "http://localhost:3000/images/image_23432432244.jpg"},{image: "http://localhost:3000/images/image_4565434453.jpg"}]
+}

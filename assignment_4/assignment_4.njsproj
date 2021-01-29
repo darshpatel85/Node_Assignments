@@ -2,14 +2,14 @@
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-    <Name>demo</Name>
-    <RootNamespace>demo</RootNamespace>
+    <Name>assignment_4</Name>
+    <RootNamespace>assignment_4</RootNamespace>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>39f81023-e632-487b-b8cd-965ce2bf9e75</ProjectGuid>
+    <ProjectGuid>f34eda1a-7a81-4637-8b0f-b7add8aadb42</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <StartupFile>server.js</StartupFile>
     <SearchPath>
@@ -28,9 +28,6 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="queries.js">
-      <SubType>Code</SubType>
-    </Content>
     <Content Include="server.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
