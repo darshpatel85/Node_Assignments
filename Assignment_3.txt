@@ -59,3 +59,34 @@ All Car details
 {
  id, model name, make name, image : [{image: "http://localhost:3000/images/image_23432432244.jpg"},{image: "http://localhost:3000/images/image_4565434453.jpg"}]
 }
+
+
+
+
+6:00 PM
+
+Swapnil Pandya to Everyone
+
+https://www.whoishostingthis.com/resources/http-status-codes/
+
+
+
+
+6:07 PM
+
+Swapnil Pandya to Everyone
+
+200,201,400,401,404,500
+
+
+
+
+6:21 PM
+
+Swapnil Pandya to Everyone
+
+https://www.geeksforgeeks.org/coding-standards-and-guidelines/
+
+https://www.castsoftware.com/glossary/coding-in-software-engineering-best-practices-good-standards
+
+https://www.multidots.com/importance-of-code-quality-and-coding-standard-in-software-development/
